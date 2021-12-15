@@ -12,6 +12,7 @@ module.exports = {
         fontFamily: {
             merri: "merriweather",
             varta: "varta",
+            lato: "lato",
         },
     },
     plugins: [],
