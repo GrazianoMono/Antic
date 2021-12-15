@@ -1,3 +1,16 @@
+/* merriweather-300 - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/merriweather-v27-latin/merriweather-v27-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/merriweather-v27-latin/merriweather-v27-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/merriweather-v27-latin/merriweather-v27-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/merriweather-v27-latin/merriweather-v27-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/merriweather-v27-latin/merriweather-v27-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/merriweather-v27-latin/merriweather-v27-latin-300.svg#Merriweather') format('svg'); /* Legacy iOS */
+}
 /* merriweather-regular - latin */
 @font-face {
     font-family: "Merriweather";
@@ -63,4 +76,31 @@
         /* Safari, Android, iOS */
             url("../assets/fonts/merriweather-v27-latin/merriweather-v27-latin-900.svg#Merriweather")
             format("svg"); /* Legacy iOS */
+}
+
+/* varta-regular - latin */
+@font-face {
+  font-family: 'Varta';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/varta-v5-latin/varta-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-regular.svg#Varta') format('svg'); /* Legacy iOS */
+}
+/* varta-700 - latin */
+@font-face {
+  font-family: 'Varta';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/varta-v5-latin/varta-v5-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/varta-v5-latin/varta-v5-latin-700.svg#Varta') format('svg'); /* Legacy iOS */
 }
