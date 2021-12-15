@@ -1,5 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+    lang="en"
+    class="
+        text-[40%]
+        sm:text-[50%]
+        md:text-[52.5%]
+        lg:text-[62.5%]
+        xl:text-[75%]
+    "
+>
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg" />
@@ -8,5 +17,176 @@
     </head>
     <body>
         <script type="module" src="/main.js"></script>
+        <section
+            class="
+                hero
+                h-screen
+                px-20
+				lg:px-25
+				xl:px-30
+				2xl:px-40
+                relative
+                bg-terracotta-light
+                min-h-[75rem]
+                flex flex-col
+            "
+        >
+            <div class="absolute top-0 left-0 lg:left-1/2">
+                <img
+                    class="w-screen h-screen object-cover"
+                    src="./assets/images/hero_image.png"
+                    alt="Background image"
+                />
+            </div>
+            <div
+                class="
+                    navbar
+                    h-1/6
+                    w-full
+                    flex flex-row
+                    justify-between
+                    items-center
+                    lg:justify-start
+                    z-10
+                "
+            >
+                <div class="navbar__logo w-min mr-8">
+                    <h1
+                        class="
+                            text-white
+                            lg:text-terracotta
+                            font-bold
+                            text-7xl
+                            lg:text-6xl
+                            font-merri
+                        "
+                    >
+                        antic
+                    </h1>
+                </div>
+                <div class="hidden lg:flex grow">
+                    <ul class="list flex flex-row text-brown-dark">
+                        <li class="mr-4 text-3xl">Products</li>
+                        <li class="mr-4 text-3xl">Rooms</li>
+                        <li class="mr-4 text-3xl">Services</li>
+                        <li class="text-3xl">Inspirations</li>
+                    </ul>
+                </div>
+                <div
+                    class="
+                        chat
+                        hidden
+                        lg:flex
+                        justify-center
+                        items-center
+                        w-20
+                        h-20
+                        border-2 border-white
+                        rounded-full
+                    "
+                >
+                    <img
+                        class="w-1/2 h-1/2"
+                        src="./assets/svg/chat.svg"
+                        alt="chat"
+                    />
+                </div>
+                <div class="navbar__navigation lg:hidden">
+                    <div class="navigation w-16 relative">
+                        <div
+                            class="
+                                navigation__line
+                                absolute
+                                bg-white
+                                h-px
+                                w-full
+                                after:content-['']
+                                after:absolute
+                                after:w-full
+                                after:h-px
+                                after:translate-y-4
+                                after:bg-white
+                            "
+                        ></div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="
+                    header
+                    w-full
+                    h-4/6
+                    flex flex-col
+                    items-center
+                    justify-center
+                    text-center text-white
+                    lg:text-terracotta
+                    lg:w-1/2
+                    lg:text-left
+                    lg:pr-8
+                    lg:items-start
+                    z-10
+                "
+            >
+                <h2
+                    class="
+                        w-full
+                        text-5xl
+                        lg:text-3xl
+                        text-inherit
+                        uppercase
+                        font-varta
+                        mb-16
+                        font-bold
+                    "
+                >
+                    home design
+                </h2>
+                <h1
+                    class="
+                        w-full
+                        text-7xl text-inherit
+                        uppercase
+                        font-merri font-light
+                        mb-16
+                    "
+                >
+                    Elegance for Interiors & Exteriors
+                </h1>
+                <h2
+                    class="
+                        w-full
+                        text-5xl
+                        lg:text-3xl
+						text-inherit
+                        lg:text-brown-dark
+                        font-varta
+						font-light
+                        mb-16
+                    "
+                >
+                    We provide everyone with modern, trendy, quality furniture
+                </h2>
+                <button
+                    class="
+                        rounded-arrow
+                        w-24
+                        h-24
+                        rounded-full
+                        border-2 border-white
+                        flex
+                        items-center
+                        justify-center
+                        lg:border-terracotta
+                    "
+                >
+                    <img
+                        class="w-1/2 h-auto text-inherit"
+                        src="./assets/svg/arrow_down.svg"
+                        alt="Down"
+                    />
+                </button>
+            </div>
+        </section>
     </body>
 </html>
