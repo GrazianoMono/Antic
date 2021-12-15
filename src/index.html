@@ -15,18 +15,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Antec</title>
     </head>
-    <body>
+    <body class="bg-terracotta-light">
         <script type="module" src="/main.js"></script>
         <section
             class="
                 hero
                 h-screen
                 px-20
-				lg:px-25
-				xl:px-30
-				2xl:px-40
+                mb-32
+                lg:px-25
+                xl:px-30
+                2xl:px-40
                 relative
-                bg-terracotta-light
                 min-h-[75rem]
                 flex flex-col
             "
@@ -158,10 +158,9 @@
                         w-full
                         text-5xl
                         lg:text-3xl
-						text-inherit
+                        text-inherit
                         lg:text-brown-dark
-                        font-varta
-						font-light
+                        font-varta font-light
                         mb-16
                     "
                 >
@@ -186,6 +185,71 @@
                         alt="Down"
                     />
                 </button>
+            </div>
+        </section>
+
+        <section
+            class="
+                projects
+                px-20
+                w-full
+                h-auto
+                grid grid-flow-row 
+				grid-cols-12
+				grid-rows-[repeat(5,min-content)]
+                sm:grid-rows-[repeat(4,min-content)]
+                md:grid-rows-[repeat(2,min-content)]
+                gap-y-24
+				gap-x-16
+                sm:gap-y-20
+                md:gap-y-16
+				mb-32
+            "
+        >
+            <div class="row-span-1 col-span-full sm:row-span-full sm:col-span-6 md:row-span-full md:col-span-4">
+                <h1 class="w-full text-7xl text-brown-dark font-merri mb-16">
+                    We stay by your side to design your projects
+                </h1>
+                <a class="text-terracotta font-extrabold font-lato" href="#"
+                    >Find out more ></a
+                >
+            </div>
+            <div class="row-span-1 col-span-full sm:col-span-6 md:col-span-4" >
+                <h2 class="text-5xl text-terracotta font-bold font-varta">
+                    Our advices
+                </h2>
+                <h4 class="text-3xl text-brown-dark">
+                    What if you took advantage of this rather special period to
+                    rethink your interior? You spend more time at home so you
+                    might as well feel good there.
+                </h4>
+            </div>
+            <div class="row-span-1 col-span-full sm:col-span-6 md:col-span-4" >
+                <h2 class="text-5xl text-terracotta font-bold font-varta">
+                    Click and Collect
+                </h2>
+                <h4 class="text-3xl text-brown-dark">
+                    Adapted and contactless. Free from € 200 of purchases in
+                    stores offering the service.
+                </h4>
+            </div>
+            <div class="row-span-1 col-span-full sm:col-span-6 md:col-span-4" >
+                <h2 class="text-5xl text-terracotta font-bold font-varta">
+                    Conception service
+                </h2>
+                <h4 class="text-3xl text-brown-dark">
+                    Personalized service with an expert advisor for your
+                    interior and exterior decoration or layout projects.
+                </h4>
+            </div>
+            <div class="row-span-1 col-span-full sm:col-span-6 md:col-span-4" >
+                <h2 class="text-5xl text-terracotta font-bold font-varta">
+                    Installation service
+                </h2>
+                <h4 class="text-3xl text-brown-dark">
+                    Our furniture packaged in flat packs are designed for easy
+                    assembly. But you can call on our partner.
+                </h4>
             </div>
         </section>
     </body>
