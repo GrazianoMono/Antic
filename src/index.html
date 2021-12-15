@@ -194,19 +194,27 @@
                 px-20
                 w-full
                 h-auto
-                grid grid-flow-row 
-				grid-cols-12
-				grid-rows-[repeat(5,min-content)]
+                grid
+                grid-flow-row
+                grid-cols-12
+                grid-rows-[repeat(5,min-content)]
                 sm:grid-rows-[repeat(4,min-content)]
                 md:grid-rows-[repeat(2,min-content)]
-                gap-y-24
-				gap-x-16
+                gap-y-24 gap-x-16
                 sm:gap-y-20
                 md:gap-y-16
-				mb-32
+                mb-32
             "
         >
-            <div class="row-span-1 col-span-full sm:row-span-full sm:col-span-6 md:row-span-full md:col-span-4">
+            <div
+                class="
+                    projects__description
+                    row-span-1
+                    col-span-full
+                    sm:row-span-full sm:col-span-6
+                    md:row-span-full md:col-span-4
+                "
+            >
                 <h1 class="w-full text-7xl text-brown-dark font-merri mb-16">
                     We stay by your side to design your projects
                 </h1>
@@ -214,7 +222,15 @@
                     >Find out more ></a
                 >
             </div>
-            <div class="row-span-1 col-span-full sm:col-span-6 md:col-span-4" >
+            <div
+                class="
+                    project
+                    row-span-1
+                    col-span-full
+                    sm:col-span-6
+                    md:col-span-4
+                "
+            >
                 <h2 class="text-5xl text-terracotta font-bold font-varta">
                     Our advices
                 </h2>
@@ -224,7 +240,15 @@
                     might as well feel good there.
                 </h4>
             </div>
-            <div class="row-span-1 col-span-full sm:col-span-6 md:col-span-4" >
+            <div
+                class="
+                    project
+                    row-span-1
+                    col-span-full
+                    sm:col-span-6
+                    md:col-span-4
+                "
+            >
                 <h2 class="text-5xl text-terracotta font-bold font-varta">
                     Click and Collect
                 </h2>
@@ -233,7 +257,15 @@
                     stores offering the service.
                 </h4>
             </div>
-            <div class="row-span-1 col-span-full sm:col-span-6 md:col-span-4" >
+            <div
+                class="
+                    project
+                    row-span-1
+                    col-span-full
+                    sm:col-span-6
+                    md:col-span-4
+                "
+            >
                 <h2 class="text-5xl text-terracotta font-bold font-varta">
                     Conception service
                 </h2>
@@ -242,7 +274,15 @@
                     interior and exterior decoration or layout projects.
                 </h4>
             </div>
-            <div class="row-span-1 col-span-full sm:col-span-6 md:col-span-4" >
+            <div
+                class="
+                    project
+                    row-span-1
+                    col-span-full
+                    sm:col-span-6
+                    md:col-span-4
+                "
+            >
                 <h2 class="text-5xl text-terracotta font-bold font-varta">
                     Installation service
                 </h2>
@@ -250,6 +290,71 @@
                     Our furniture packaged in flat packs are designed for easy
                     assembly. But you can call on our partner.
                 </h4>
+            </div>
+        </section>
+        <br />
+        <section
+            class="
+                newsletter
+                px-20
+                w-full
+                h-auto
+                flex flex-col
+                items-center
+                justify-center
+                bg-white
+                py-32
+                md:flex-row
+            "
+        >
+            <div class="newsletter__description w-full h-auto mb-24 md:mb-0">
+                <h1 class="w-full text-7xl text-brown-dark font-merri mb-16">
+                    Be aware of the latest trends
+                </h1>
+                <h4 class="text-3xl text-brown-dark mb-8">
+                    Stay informed of new trends, but also of our various offers.
+                </h4>
+                <a class="text-terracotta font-extrabold font-lato" href="#"
+                    >Learn more ></a
+                >
+            </div>
+            <div
+                class="
+                    newsletter__form
+                    w-full
+                    h-auto
+                    flex flex-col
+                    md:flex-row
+                    justify-end
+                    items-center
+                "
+            >
+                <input
+                    class="
+                        h-24
+                        w-full
+                        md:w-1/2
+                        bg-terracotta-light
+                        px-8
+                        mb-4
+                        md:mb-0 md:mr-8
+                        text-varta text-2xl
+                    "
+                    type="email"
+                    placeholder="email@address.com"
+                />
+                <button
+                    class="
+                        h-24
+                        w-full
+                        md:w-2/6
+                        bg-brown-dark
+                        text-white text-lato
+                        font-bold
+                    "
+                >
+                    Subscribe
+                </button>
             </div>
         </section>
     </body>
