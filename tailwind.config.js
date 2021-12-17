@@ -4,6 +4,7 @@ module.exports = {
         colors: {
             terracotta: "#a06056",
             "brown-light": "#706458",
+            "brown-lighter": "#7064585a",
             "brown-dark": "#534b42",
             black: "#121212",
             white: "#fff",
