@@ -189,7 +189,12 @@
         </section>
 
         <section class="rooms px-20 lg:px-25 xl:px-30 2xl:px-40 mb-32">
-            <div class="grid grid-cols-12 grid-rows-[repeat(4,min-content)] md:grid-rows-[repeat(3,min-content)]">
+            <div
+                class="
+                    grid grid-cols-12 grid-rows-[repeat(4,min-content)]
+                    md:grid-rows-[repeat(3,min-content)]
+                "
+            >
                 <h2
                     class="
                         font-merri
@@ -198,54 +203,126 @@
                         mb-32
                         text-7xl
                         font-light
-						col-span-full
+                        col-span-full
                     "
                 >
                     Find your room
                 </h2>
-                <h4 class="font-varta mr-8 mb-16 text-brown-light col-span-full md:col-span-2">
+                <h4
+                    class="
+                        font-varta
+                        mr-8
+                        mb-16
+                        text-brown-light
+                        col-span-full
+                        md:col-span-2
+                    "
+                >
                     Dining room, bedroom, bathroom or office. Find what you need
                 </h4>
-                <div class="relative col-span-6 mr-8 mb-16 md:col-span-3 md:min-h-[35rem]">
-                    <img class="h-full object-cover" src="./assets/images/carousel1.png" alt="bedroom" />
+                <div
+                    class="
+                        relative
+                        col-span-6
+                        mr-8
+                        mb-16
+                        md:col-span-3 md:min-h-[35rem]
+                    "
+                >
+                    <img
+                        class="h-full object-cover"
+                        src="./assets/images/carousel1.png"
+                        alt="bedroom"
+                    />
                     <h2
                         class="
-                            font-marra
-                            text-5xl text-terracotta
+                            font-merri
+                            text-7xl text-terracotta
                             absolute
                             top-1/2
                             left-full
-							-translate-x-1/2
+                            -translate-x-1/2 -translate-y-1/2
                         "
                     >
                         Bedroom
                     </h2>
                 </div>
-				<h4 class="font-varta mr-8 text-brown-light col-span-6 md:col-span-2">
-					New arrivals
-				</h4>
-				<div class="relative col-span-6 mr-8 mb-16 hidden md:col-span-3 md:min-h-[35rem] md:block">
-                    <img class="h-full object-cover" src="./assets/images/carousel1.png" alt="bedroom" />
+                <h4
+                    class="
+                        font-varta
+                        mr-8
+                        text-brown-light
+                        col-span-6
+                        md:col-span-2
+                    "
+                >
+                    New arrivals
+                </h4>
+                <div
+                    class="
+                        relative
+                        col-span-6
+                        mr-8
+                        mb-16
+                        hidden
+                        md:col-span-3 md:min-h-[35rem] md:block
+                    "
+                >
+                    <img
+                        class="h-full object-cover"
+                        src="./assets/images/carousel2.png"
+                        alt="bedroom"
+                    />
                     <h2
                         class="
-                            font-marra
-                            text-5xl text-terracotta
+                            font-merri
+                            text-7xl text-terracotta
                             absolute
                             top-1/2
                             left-full
-							-translate-x-1/2
+                            -translate-x-1/2 -translate-y-1/2
                         "
                     >
-                        Bedroom
+                        Living Room
                     </h2>
                 </div>
-				<h4 class="font-varta mr-8 text-brown-light col-span-6 hidden md:col-span-2 md:block">
-					New arrivals
-				</h4>
-				<div class="col-span-full flex flex-row md:flex-row-reverse md:justify-end items-center">
-					<a class="font-lato w-1/2 text-terracotta font-extrabold" href="#">Next ></a>
-					<h3 class="w-1/2 text-brown-lighter font-varta text-right md:text-left md:w-1/6 md:mr-8">01 / 05</h3>
-				</div>
+                <h4
+                    class="
+                        font-varta
+                        mr-8
+                        text-brown-light
+                        col-span-6
+                        hidden
+                        md:col-span-2 md:block
+                    "
+                >
+                    New arrivals
+                </h4>
+                <div
+                    class="
+                        col-span-full
+                        flex flex-row
+                        md:flex-row-reverse md:justify-end
+                        items-center
+                    "
+                >
+                    <a
+                        class="font-lato w-1/2 text-terracotta font-extrabold"
+                        href="#"
+                        >Next ></a
+                    >
+                    <h3
+                        class="
+                            w-1/2
+                            text-brown-lighter
+                            font-varta
+                            text-right
+                            md:text-left md:w-1/6 md:mr-8
+                        "
+                    >
+                        01 / 05
+                    </h3>
+                </div>
             </div>
         </section>
 
@@ -449,15 +526,19 @@
                 lg:px-25
                 xl:px-30
                 2xl:px-40
+                py-24
                 w-full
                 h-auto
                 flex flex-col
                 items-center
                 justify-start
-                py-32
                 bg-white
-                md:flex-col-reverse
                 overflow-hidden
+                md:flex-col-reverse
+                md:relative
+                md:h-[70vh]
+                md:min-h-[110rem]
+                md:max-h-[120rem]
             "
         >
             <div
@@ -493,6 +574,7 @@
                 >
                     <div class="flex flex-row mb-8">
                         <button
+                            id="slide-previous"
                             class="
                                 rounded-arrow
                                 w-16
@@ -513,6 +595,7 @@
                             />
                         </button>
                         <button
+                            id="slide-next"
                             class="
                                 rounded-arrow
                                 w-16
@@ -532,16 +615,30 @@
                             />
                         </button>
                     </div>
-                    <h3 class="text-brown-lighter font-varta">01 / 05</h3>
+                    <h3
+                        id="slider-counter"
+                        class="text-brown-lighter font-varta"
+                    >
+                        01 / 05
+                    </h3>
                 </div>
             </div>
 
             <div
+                id="inspiration-slider"
                 class="
                     inspiration__images
                     flex flex-row flex-wrap
-                    md:flex-nowrap md:mb-16
-                    overflow-x-scroll
+                    md:flex-nowrap
+					md:mb-16
+                    md:transition-all
+                    md:duration-1000
+                    md:absolute
+					md:top-32
+                    md:left-20
+                    lg:left-25
+                    xl:left-30
+                    2xl:left-40
                 "
             >
                 <div
@@ -551,11 +648,17 @@
                         justify-start
                         items-center
                         w-1/2
-                        p-8
-                        md:w-[53rem]
+						p-8
+						md:p-0
+                        md:mr-8
+                        md:w-[50rem]
                     "
                 >
-                    <img src="./assets/images/slide1.png" alt="chair" />
+                    <img
+                        class="mb-8"
+                        src="./assets/images/slide1.png"
+                        alt="chair"
+                    />
                     <h4>Chair</h4>
                 </div>
                 <div
@@ -565,11 +668,17 @@
                         justify-start
                         items-center
                         w-1/2
-                        p-8
-                        md:w-[53rem]
+						p-8
+						md:p-0
+                        md:mr-8
+                        md:w-[50rem]
                     "
                 >
-                    <img src="./assets/images/slide1.png" alt="chair" />
+                    <img
+                        class="mb-8"
+                        src="./assets/images/slide1.png"
+                        alt="chair"
+                    />
                     <h4>Chair</h4>
                 </div>
                 <div
@@ -579,11 +688,17 @@
                         justify-start
                         items-center
                         w-1/2
-                        p-8
-                        md:w-[53rem]
+						p-8
+						md:p-0
+                        md:mr-8
+                        md:w-[50rem]
                     "
                 >
-                    <img src="./assets/images/slide1.png" alt="chair" />
+                    <img
+                        class="mb-8"
+                        src="./assets/images/slide1.png"
+                        alt="chair"
+                    />
                     <h4>Chair</h4>
                 </div>
                 <div
@@ -593,11 +708,17 @@
                         justify-start
                         items-center
                         w-1/2
-                        p-8
-                        md:w-[53rem]
+						p-8
+						md:p-0
+                        md:mr-8
+                        md:w-[50rem]
                     "
                 >
-                    <img src="./assets/images/slide1.png" alt="chair" />
+                    <img
+                        class="mb-8"
+                        src="./assets/images/slide1.png"
+                        alt="chair"
+                    />
                     <h4>Chair</h4>
                 </div>
             </div>
@@ -800,7 +921,9 @@
                     planet. For us, that means retailing responsibly. We’ve set
                     a number of goals to get us there.
                 </h4>
-                <a class="text-terracotta font-extrabold font-lato" href="#">Learn more ></a>
+                <a class="text-terracotta font-extrabold font-lato" href="#"
+                    >Learn more ></a
+                >
             </div>
             <div
                 class="
