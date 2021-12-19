@@ -22,9 +22,9 @@
                 hero
                 h-screen
                 px-20
-                lg:px-25
-                xl:px-30
-                2xl:px-40
+                lg:px-24
+                xl:px-28
+                2xl:px-32
                 mb-32
                 relative
                 min-h-[70rem]
@@ -188,7 +188,7 @@
             </div>
         </section>
 
-        <section class="rooms px-20 lg:px-25 xl:px-30 2xl:px-40 mb-32">
+        <section class="rooms px-20 lg:px-24 xl:px-28 2xl:px-32 mb-32">
             <div
                 class="
                     grid grid-cols-12 grid-rows-[repeat(4,min-content)]
@@ -309,7 +309,7 @@
                     <a
                         class="font-lato w-1/2 text-terracotta font-extrabold"
                         href="#"
-                        >Next ></a
+                        >Next &gt;</a
                     >
                     <h3
                         class="
@@ -330,9 +330,9 @@
             class="
                 projects
                 px-20
-                lg:px-25
-                xl:px-30
-                2xl:px-40
+                lg:px-24
+                xl:px-28
+                2xl:px-32
                 w-full
                 h-auto
                 grid
@@ -447,9 +447,9 @@
             class="
                 newsletter
                 px-20
-                lg:px-25
-                xl:px-30
-                2xl:px-40
+                lg:px-24
+                xl:px-28
+                2xl:px-32
                 w-full
                 h-auto
                 flex flex-col
@@ -523,9 +523,9 @@
             class="
                 inspiration
                 px-20
-                lg:px-25
-                xl:px-30
-                2xl:px-40
+                lg:px-24
+                xl:px-28
+                2xl:px-32
                 py-24
                 w-full
                 h-auto
@@ -589,8 +589,8 @@
                             "
                         >
                             <img
-                                class="w-1/2 h-auto text-inherit"
-                                src="./assets/svg/arrow_down.svg"
+                                class="w-1/4 h-auto text-inherit"
+                                src="./assets/svg/arrow_left.svg"
                                 alt="Down"
                             />
                         </button>
@@ -609,8 +609,8 @@
                             "
                         >
                             <img
-                                class="w-1/2 h-auto text-inherit"
-                                src="./assets/svg/arrow_down.svg"
+                                class="w-1/4 h-auto text-inherit"
+                                src="./assets/svg/arrow_right.svg"
                                 alt="Down"
                             />
                         </button>
@@ -630,15 +630,15 @@
                     inspiration__images
                     flex flex-row flex-wrap
                     md:flex-nowrap
-					md:mb-16
+                    md:mb-16
                     md:transition-all
                     md:duration-1000
                     md:absolute
-					md:top-32
+                    md:top-32
                     md:left-20
-                    lg:left-25
-                    xl:left-30
-                    2xl:left-40
+                    lg:left-24
+                    xl:left-28
+                    2xl:left-32
                 "
             >
                 <div
@@ -646,19 +646,29 @@
                         inspired-image
                         flex flex-col
                         justify-start
-                        items-center
+                        items-start
                         w-1/2
-						p-8
-						md:p-0
-                        md:mr-8
-                        md:w-[50rem]
+                        p-8
+                        md:p-0 md:mr-8 md:w-[50rem]
+                        lg:mr-16
+						2xl:mr-24
                     "
                 >
-                    <img
-                        class="mb-8"
-                        src="./assets/images/slide1.png"
-                        alt="chair"
-                    />
+                    <div
+                        class="
+                            w-full
+                            max-h-[28rem]
+                            sm:max-h-[35rem]
+                            md:max-h-[60rem]
+                            mb-8
+                        "
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src="./assets/images/slide1.png"
+                            alt="chair"
+                        />
+                    </div>
                     <h4>Chair</h4>
                 </div>
                 <div
@@ -666,60 +676,90 @@
                         inspired-image
                         flex flex-col
                         justify-start
-                        items-center
+                        items-start
                         w-1/2
-						p-8
-						md:p-0
-                        md:mr-8
-                        md:w-[50rem]
+                        p-8
+                        md:p-0 md:mr-8 md:w-[50rem]
+                        lg:mr-16
+						2xl:mr-24
                     "
                 >
-                    <img
-                        class="mb-8"
-                        src="./assets/images/slide1.png"
-                        alt="chair"
-                    />
-                    <h4>Chair</h4>
+                    <div
+                        class="
+                            w-full
+                            max-h-[28rem]
+                            sm:max-h-[35rem]
+                            md:max-h-[60rem]
+                            mb-8
+                        "
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src="./assets/images/slide2.png"
+                            alt="chair"
+                        />
+                    </div>
+                    <h4>Cooked</h4>
                 </div>
                 <div
                     class="
                         inspired-image
                         flex flex-col
                         justify-start
-                        items-center
+                        items-start
                         w-1/2
-						p-8
-						md:p-0
-                        md:mr-8
-                        md:w-[50rem]
+                        p-8
+                        md:p-0 md:mr-8 md:w-[50rem]
+                        lg:mr-16
+						2xl:mr-24
                     "
                 >
-                    <img
-                        class="mb-8"
-                        src="./assets/images/slide1.png"
-                        alt="chair"
-                    />
-                    <h4>Chair</h4>
+                    <div
+                        class="
+                            w-full
+                            max-h-[28rem]
+                            sm:max-h-[35rem]
+                            md:max-h-[60rem]
+                            mb-8
+                        "
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src="./assets/images/slide3.png"
+                            alt="chair"
+                        />
+                    </div>
+                    <h4>Living room</h4>
                 </div>
                 <div
                     class="
                         inspired-image
                         flex flex-col
                         justify-start
-                        items-center
+                        items-start
                         w-1/2
-						p-8
-						md:p-0
-                        md:mr-8
-                        md:w-[50rem]
+                        p-8
+                        md:p-0 md:mr-8 md:w-[50rem]
+                        lg:mr-16
+						2xl:mr-24
                     "
                 >
-                    <img
-                        class="mb-8"
-                        src="./assets/images/slide1.png"
-                        alt="chair"
-                    />
-                    <h4>Chair</h4>
+                    <div
+                        class="
+                            w-full
+                            max-h-[28rem]
+                            sm:max-h-[35rem]
+                            md:max-h-[60rem]
+                            mb-8
+                        "
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src="./assets/images/slide4.png"
+                            alt="chair"
+                        />
+                    </div>
+                    <h4>Tables</h4>
                 </div>
             </div>
         </section>
@@ -727,9 +767,9 @@
         <section
             class="
                 px-20
-                lg:px-25
-                xl:px-30
-                2xl:px-40
+                lg:px-24
+                xl:px-28
+                2xl:px-32
                 w-full
                 h-auto
                 flex flex-col flex-wrap
