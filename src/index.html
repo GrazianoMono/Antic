@@ -189,25 +189,25 @@
         </section>
 
         <section class="rooms px-20 lg:px-24 xl:px-28 2xl:px-32 mb-32">
-            <div
+            <h2
                 class="
-                    grid grid-cols-12 grid-rows-[repeat(4,min-content)]
-                    md:grid-rows-[repeat(3,min-content)]
+                    font-merri
+                    text-brown-dark
+                    w-full
+                    mb-24
+                    text-7xl
+                    font-light
                 "
             >
-                <h2
-                    class="
-                        font-merri
-                        text-brown-dark
-                        w-full
-                        mb-32
-                        text-7xl
-                        font-light
-                        col-span-full
-                    "
-                >
-                    Find your room
-                </h2>
+                Find your room
+            </h2>
+            <div
+                class="
+                    grid grid-cols-12 grid-rows-[repeat(3,min-content)]
+                    md:grid-rows-[repeat(2,min-content)]
+                    overflow-hidden
+                "
+            >
                 <h4
                     class="
                         font-varta
@@ -221,108 +221,127 @@
                     Dining room, bedroom, bathroom or office. Find what you need
                 </h4>
                 <div
-                    class="
-                        relative
-                        col-span-6
-                        mr-8
-                        mb-16
-                        md:col-span-3 md:min-h-[35rem]
-                    "
-                >
-                    <img
-                        class="h-full object-cover"
-                        src="./assets/images/carousel1.png"
-                        alt="bedroom"
-                    />
-                    <h2
-                        class="
-                            font-merri
-                            text-7xl text-terracotta
-                            absolute
-                            top-1/2
-                            left-full
-                            -translate-x-1/2 -translate-y-1/2
-                        "
-                    >
-                        Bedroom
-                    </h2>
-                </div>
-                <h4
-                    class="
-                        font-varta
-                        mr-8
-                        text-brown-light
-                        col-span-6
-                        md:col-span-2
-                    "
-                >
-                    New arrivals
-                </h4>
-                <div
-                    class="
-                        relative
-                        col-span-6
-                        mr-8
-                        mb-16
-                        hidden
-                        md:col-span-3 md:min-h-[35rem] md:block
-                    "
-                >
-                    <img
-                        class="h-full object-cover"
-                        src="./assets/images/carousel2.png"
-                        alt="bedroom"
-                    />
-                    <h2
-                        class="
-                            font-merri
-                            text-7xl text-terracotta
-                            absolute
-                            top-1/2
-                            left-full
-                            -translate-x-1/2 -translate-y-1/2
-                        "
-                    >
-                        Living Room
-                    </h2>
-                </div>
-                <h4
-                    class="
-                        font-varta
-                        mr-8
-                        text-brown-light
-                        col-span-6
-                        hidden
-                        md:col-span-2 md:block
-                    "
-                >
-                    New arrivals
-                </h4>
-                <div
+                    id="carousel-rooms"
                     class="
                         col-span-full
-                        flex flex-row
-                        md:flex-row-reverse md:justify-end
-                        items-center
+                        md:col-span-10
+                        w-full
+                        grid
+						grid-flow-col
+						grid-cols-[100%]
+                        md:grid-cols-[repeat(2,50%)]
+                        grid-rows-[50rem]
+                        auto-cols-[50%]
+                        overflow-x-hidden
+                        mb-24
                     "
                 >
-                    <a
-                        class="font-lato w-1/2 text-terracotta font-extrabold"
-                        href="#"
-                        >Next &gt;</a
-                    >
-                    <h3
-                        class="
-                            w-1/2
-                            text-brown-lighter
-                            font-varta
-                            text-right
-                            md:text-left md:w-1/6 md:mr-8
-                        "
-                    >
-                        01 / 05
-                    </h3>
+                    <div class="room w-full h-full md:col-span-1 flex flex-row">
+                        <div class="relative w-1/2 h-full">
+                            <img
+                                class="h-full w-full object-cover"
+                                src="./assets/images/carousel1.png"
+                                alt="bedroom"
+                            />
+                            <h2
+                                class="
+                                    font-merri
+                                    text-7xl text-terracotta
+                                    absolute
+                                    top-1/2
+                                    left-full
+                                    -translate-x-1/2 -translate-y-1/2
+                                "
+                            >
+                                Bedroom
+                            </h2>
+                        </div>
+                        <h4 class="font-varta pl-16 text-brown-light w-1/2">
+                            New arrivals
+                        </h4>
+                    </div>
+                    <div class="room w-full h-full md:col-span-1 flex flex-row">
+                        <div class="relative w-1/2 h-full">
+                            <img
+                                class="h-full w-full object-cover"
+                                src="./assets/images/carousel1.png"
+                                alt="bedroom"
+                            />
+                            <h2
+                                class="
+                                    font-merri
+                                    text-7xl text-terracotta
+                                    absolute
+                                    top-1/2
+                                    left-full
+                                    -translate-x-1/2 -translate-y-1/2
+                                "
+                            >
+                                Bedroom
+                            </h2>
+                        </div>
+                        <h4 class="font-varta pl-16 text-brown-light w-1/2">
+                            New arrivals
+                        </h4>
+                    </div>
+                    <div class="room w-full h-full md:col-span-1 flex flex-row">
+                        <div class="relative w-1/2 h-full">
+                            <img
+                                class="h-full w-full object-cover"
+                                src="./assets/images/carousel1.png"
+                                alt="bedroom"
+                            />
+                            <h2
+                                class="
+                                    font-merri
+                                    text-7xl text-terracotta
+                                    absolute
+                                    top-1/2
+                                    left-full
+                                    -translate-x-1/2 -translate-y-1/2
+                                "
+                            >
+                                Bedroom
+                            </h2>
+                        </div>
+                        <h4 class="font-varta pl-16 text-brown-light w-1/2">
+                            New arrivals
+                        </h4>
+                    </div>
                 </div>
+            </div>
+            <div
+                class="
+                    w-full
+                    flex flex-row
+                    md:flex-row-reverse md:justify-end
+                    items-center
+                "
+            >
+                <button
+                    class="
+                        font-lato
+                        w-1/2
+                        md:w-max
+                        text-terracotta
+                        font-extrabold
+                        text-left
+                    "
+                    href="#"
+                >
+                    Next &gt;
+                </button>
+                <h3
+                    class="
+                        w-1/2
+                        text-brown-lighter
+                        font-varta
+                        text-right
+                        md:text-left md:w-1/6 md:mr-8
+                    "
+                >
+                    01 / 05
+                </h3>
             </div>
         </section>
 
@@ -651,17 +670,11 @@
                         p-8
                         md:p-0 md:mr-8 md:w-[50rem]
                         lg:mr-16
-						2xl:mr-24
+                        2xl:mr-24
                     "
                 >
                     <div
-                        class="
-                            w-full
-                            h-[28rem]
-                            sm:h-[35rem]
-                            md:h-[60rem]
-                            mb-8
-                        "
+                        class="w-full h-[28rem] sm:h-[35rem] md:h-[60rem] mb-8"
                     >
                         <img
                             class="w-full h-full object-cover"
@@ -681,17 +694,11 @@
                         p-8
                         md:p-0 md:mr-8 md:w-[50rem]
                         lg:mr-16
-						2xl:mr-24
+                        2xl:mr-24
                     "
                 >
                     <div
-                        class="
-                            w-full
-                            h-[28rem]
-                            sm:h-[35rem]
-                            md:h-[60rem]
-                            mb-8
-                        "
+                        class="w-full h-[28rem] sm:h-[35rem] md:h-[60rem] mb-8"
                     >
                         <img
                             class="w-full h-full object-cover"
@@ -711,17 +718,11 @@
                         p-8
                         md:p-0 md:mr-8 md:w-[50rem]
                         lg:mr-16
-						2xl:mr-24
+                        2xl:mr-24
                     "
                 >
                     <div
-                        class="
-                            w-full
-                            h-[28rem]
-                            sm:h-[35rem]
-                            md:h-[60rem]
-                            mb-8
-                        "
+                        class="w-full h-[28rem] sm:h-[35rem] md:h-[60rem] mb-8"
                     >
                         <img
                             class="w-full h-full object-cover"
@@ -741,17 +742,11 @@
                         p-8
                         md:p-0 md:mr-8 md:w-[50rem]
                         lg:mr-16
-						2xl:mr-24
+                        2xl:mr-24
                     "
                 >
                     <div
-                        class="
-                            w-full
-                            h-[28rem]
-                            sm:h-[35rem]
-                            md:h-[60rem]
-                            mb-8
-                        "
+                        class="w-full h-[28rem] sm:h-[35rem] md:h-[60rem] mb-8"
                     >
                         <img
                             class="w-full h-full object-cover"
@@ -785,7 +780,7 @@
                     footer__logo
                     w-full
                     flex flex-col
-                    items-center
+                    items-start
                     justify-center
                     mb-16
                     md:w-1/6
