@@ -1,6 +1,13 @@
 
 @import url("./base/typography.css");
 
+@import url("./components/room.css");
+@import url("./components/list.css");
+@import url("./components/logo.css");
+
+@import url("./layouts/footer.css");
+@import url("./layouts/hero.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,0 +1,19 @@
+.hero {
+	@apply h-screen
+        px-20
+        lg:px-24
+        xl:px-28
+        2xl:px-32
+        mb-32
+        relative
+        min-h-[70rem]
+        flex flex-col
+        overflow-hidden;
+
+	&__background {
+		@apply absolute
+			top-0
+			left-0
+			lg:left-1/2;
+	}
+}

@@ -1,0 +1,10 @@
+.logo {
+	&--dark {
+		@apply
+		text-brown-dark
+        font-bold
+        text-7xl
+        lg:text-6xl
+        font-merri;
+	}
+}

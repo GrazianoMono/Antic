@@ -1,0 +1,13 @@
+.list {
+	&--footer {
+		@apply w-full items-start justify-center mb-24;
+	}
+
+	&__title {
+		@apply text-5xl;
+	}
+
+	& li {
+		@apply font-varta text-brown-dark font-bold mb-8;
+	}
+}
