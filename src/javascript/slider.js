@@ -20,7 +20,6 @@ const slide = (value) => {
     if (slider_position + value >= slider_children_count) return;
     slider_position += value;
     let margin_dimension = window.getComputedStyle(image).marginRight;
-    console.log(margin_dimension);
     slider.style =
         "transform: " +
         "translateX(calc(" +
