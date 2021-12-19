@@ -19,16 +19,14 @@ const slide = (value) => {
     if (slider_position + value < 0) return;
     if (slider_position + value >= slider_children_count) return;
     slider_position += value;
-    let margin_dimension = window.getComputedStyle(image).marginRight;
+    let image_width = window.getComputedStyle(image).width;
     slider.style =
         "transform: " +
         "translateX(calc(" +
         -slider_position +
         " * " +
-        "calc(50rem" +
-        " + " +
-        margin_dimension +
-        ")))";
+        image_width +
+        "))";
     if (append_zero) {
         slider_counter.innerHTML =
             "0" + (slider_position + 1) + " / 0" + slider_children_count;
